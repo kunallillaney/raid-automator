@@ -1,0 +1,1 @@
+UUID="" /data   xfs rw,noatime,async,logbsize=256k,inode64,largeio,swalloc 0 0
