@@ -20,3 +20,6 @@ sudo mdadm -C /dev/md0 -v -l 0 -n 8 /dev/xvdb1 /dev/xvdc1 /dev/xvdd1 /dev/xvde1 
 
 # Creating an xfs file-system
 sudo mkfs.xfs /dev/md0
+
+# Creating the directory /data
+sudo mkdir /data/
