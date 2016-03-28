@@ -16,7 +16,7 @@ do
 done
 
 # Creating the software RAID
-sudo mdadm -C /dev/md0 -v -l 0 -n 8 $hdd_list
+sudo mdadm -C /dev/md0 -v -l 0 -n 8 /dev/xvdb1 /dev/xvdc1 /dev/xvdd1 /dev/xvde1 /dev/xvdf1 /dev/xvdg1 /dev/xvdh1 /dev/xvdi1
 
 # Creating an xfs file-system
 sudo mkfs.xfs /dev/md0
