@@ -23,3 +23,10 @@ sudo mkfs.xfs /dev/md0
 
 # Creating the directory /data
 sudo mkdir /data/
+
+# Mounting /dev/md0
+sudo mount /dev/md0 /data/
+
+# Creating the cache directory
+sudo mkdir /data/cache/
+sudo chown -R www-data:www-data /data/cache/
